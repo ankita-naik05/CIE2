@@ -1,16 +1,14 @@
 import sys
 
-# Price argument
-if len(sys.argv) >= 2:
+if len(sys.argv) == 3:
     price = float(sys.argv[1])
-else:
-    price = 1000
-
-# Tax argument
-if len(sys.argv) >= 3:
     tax = float(sys.argv[2])
+    print("User provided values")
 else:
-    tax = 10
+    print("No input values, using default values")
+    price = float(input("Enter the price: "))
+    tax = float(input("Enter the tax (%): "))
+    
 
 print("----- Final Payable Amount -----")
 print("Price:", price)
