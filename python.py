@@ -6,8 +6,8 @@ if len(sys.argv) == 3:
     print("User provided values")
 else:
     print("No input values, using default values")
-    price = "price"
-    tax = "tax"
+    price = 1000
+    tax = 10
 
 print("----- Final Payable Amount -----")
 print("Price:", price)
